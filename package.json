@@ -1,0 +1,14 @@
+{
+  "name": "vuelearn",
+  "version": "1.0.0",
+  "description": "这是一个基于yog2框架 + vue2 + vue-router + vuex搭建的web项目",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "start": "yog2 release debug -cwL --fis3",
+    "test": "yog2 release test --fis3 && node prod.js && yog2 release test --fis3 uploadProd",
+    "prod": "yog2 release prod --fis3 && node prod.js && yog2 release prod --fis3 uploadProd"
+  },
+  "author": "sqliang",
+  "license": "ISC"
+}
