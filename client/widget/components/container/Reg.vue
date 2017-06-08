@@ -49,13 +49,24 @@
         },
         method: {
             handleSubmit() {
-                this.$ref.user.validate((validate) => {
-                    
+                this.$ref.user.validate((valid) => {
+                    if(valid) {
+                        this.$store.dispatch("UserReg", this.user);
+                    } else {
+                        console.log('error submit');
+                        return false;
+                    }
                 });
             },
-            toLogin(){}
+            toLogin(){
+                this.$router.push({path: '/login'});
+            }
         }
-
-
     }
 </script>
+
+<style lang="scss" scoped>
+    .el-form-item{
+        text-align: center
+    }
+</style>
