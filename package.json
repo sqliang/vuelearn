@@ -2,7 +2,12 @@
   "name": "vuelearn",
   "version": "1.0.0",
   "description": "这是一个基于yog2框架 + vue2 + vue-router + vuex搭建的web项目",
-  "dependencies": {},
+  "dependencies": {
+    "dot-env": "0.0.1",
+    "dotenv": "^4.0.0",
+    "sha1": "^1.1.1",
+    "jsonwebtoken": "^7.3.0"
+  },
   "devDependencies": {},
   "scripts": {
     "start": "yog2 release debug -cwL --fis3",
