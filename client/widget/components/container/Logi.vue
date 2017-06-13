@@ -8,7 +8,7 @@
                 <el-input type="text" v-model="user.account" auto-complete="off" placeholder="帐号" @change="changeFlag"></el-input>
             </el-form-item>
             <el-form-item prop="checkPass">
-                <el-input type="password" v-model="unser.checkPass" auto-complete="off" placeholder="密码"></el-input>
+                <el-input type="password" v-model="user.checkPass" auto-complete="off" placeholder="密码"></el-input>
             </el-form-item>
             <el-form-item style="width: 100%">
                 <el-button class="login_button" type="primary" style="width: 40%;" @click="handleSubmit">登录</el-button>

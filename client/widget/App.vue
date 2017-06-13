@@ -1,27 +1,23 @@
 <template>
-    <div id="app" v-cloak>
+    <div id="app">
         <router-view></router-view>
     </div>
 </template>
 
 <script>
-    import { mapState } from 'vuex';
+    import Router from 'vue-router/dist/vue-router';
     export default {
-        components: {
-
-        },
-        method: {
-
-        },
-        computed: mapState(['progress']),
-        mounted(){
-
-        }
+        name: 'app'
     };
 </script>
 
 <style lang="scss">
-    #app{
-        height: 100%;
+    #app {
+        font-family: 'Avenir', Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-align: center;
+        color: #2c3e50;
+        margin-top: 60px;
     }
 </style>

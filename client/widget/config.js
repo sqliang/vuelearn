@@ -3,7 +3,7 @@ module.exports = {
     'name': 'vuelearn',
     'title': 'vuelearn',
     'domain': 'https://special.ppmoney.com',
-    'domainFolder': '/yog-demo/',
+    'domainFolder': '/yog/',
     'redirect': 'https://special.ppmoney.com/new/activity/2016/12/christmas-day-pc/index.html',
     'cmsAddrId':"585baf3b8697e6e37686b581",
     'cmsTextId':"585baf1c8697e6e37686b580",

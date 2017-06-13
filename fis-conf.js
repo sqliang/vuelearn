@@ -7,7 +7,7 @@
 var config = require('./client/widget/config.js');
 var childProcess = require('child_process');
 
-fis.config.set('namespace', 'vuelearn');
+fis.config.set('namespace', config.name);
 
 var domain = config.domain;
 var url = config.domainFolder;
