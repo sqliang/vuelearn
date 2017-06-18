@@ -1,6 +1,6 @@
 <template lang="html">
     <footer>
-        <p>Copyrights © 2017 平凡之路 & sqliang. All Rights Reserved.</p>
+        <p>Copyrights © 2017 sqliang & 平凡之路. All Rights Reserved.</p>
     </footer>
 </template>
 

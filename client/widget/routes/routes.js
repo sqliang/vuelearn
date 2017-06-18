@@ -20,11 +20,25 @@ import NotFound from '../components/container/NotFound.vue';
 
 export default [
     {
+        path: '/reg',
+        component: Reg,
+        meta: {auth: false},
+        hidden: true
+    },
+    {
         path: '/',
-        component: App,
+        component: Front,
+        hidden: true,
         children: [
-            {path:'reg',component: Reg}
+            {path: '', redirect: 'home', meta: {auth:false}},
+            {path: 'home', component: Home, meta: {auth: false}},
+            {path: 'about', component: About, meta: {auth:false}}
         ]
+    },
+    {
+        path: '/login',
+        component: Login,
+        hidden: true
     },
     {
         path: '*',

@@ -5,7 +5,6 @@
 </template>
 
 <script>
-    import Router from 'vue-router/dist/vue-router';
     export default {
         name: 'app'
     };

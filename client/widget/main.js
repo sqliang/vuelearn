@@ -14,6 +14,18 @@ new Vue({
     el: '#app',
     router,
     template: '<App/>',
-    components: {App}
+    components: {App},
+    created: function () {
+        console.log('created');
+    },
+    mounted: function(){
+        console.log('mounted');
+    },
+    updated: function () {
+        console.log('updated');
+    },
+    destroyed: function () {
+        console.log('destroyed');
+    }
 });
 
