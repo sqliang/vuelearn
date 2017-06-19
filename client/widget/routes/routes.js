@@ -17,11 +17,19 @@ import Tags from '../components/container/Tags.vue';
 import Article from '../components/container/Article.vue';
 import NotFound from '../components/container/NotFound.vue';
 
+import Hello from '../components/Hello.vue';
+
 
 export default [
     {
         path: '/reg',
         component: Reg,
+        meta: {auth: false},
+        hidden: true
+    },
+    {
+        path: '/hello',
+        component: Hello,
         meta: {auth: false},
         hidden: true
     },
