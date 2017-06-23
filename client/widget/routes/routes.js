@@ -38,9 +38,21 @@ export default [
         component: Front,
         hidden: true,
         children: [
-            {path: '', redirect: 'home', meta: {auth:false}},
-            {path: 'home', component: Home, meta: {auth: false}},
-            {path: 'about', component: About, meta: {auth:false}}
+            {
+                path: '',
+                redirect: 'home',
+                meta: {auth:false}
+            },
+            {
+                path: 'home',
+                component: Home,
+                meta: {auth: false}
+            },
+            {
+                path: 'about',
+                component: About,
+                meta: {auth:false}
+            }
         ]
     },
     {
