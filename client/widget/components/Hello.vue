@@ -1,6 +1,7 @@
 <template>
     <div id="hello-title">
-        <p>{{hello}}</p>
+        <p>{{ hello }}</p>
+        <p>{{ count }}</p>
     </div>
 </template>
 
@@ -9,6 +10,11 @@
         data() {
             return  {
                 hello: 'hekklo vue.js'
+            }
+        },
+        computed: {
+            count() {
+                return this.$store.state.count;
             }
         }
     }
