@@ -1,7 +1,19 @@
 <template>
     <div>
+        <div>
+            <span>{{ name }}</span>
+            <button type="button" @click="updateName">修改名字</button>
+        </div>
         <p>{{ title }}</p>
         <p>{{ count }}</p>
+        <div>
+            <button type="button" @click="add">
+                同步加法器
+            </button>
+            <button type="button" @click="addAsync">
+                异步加法器
+            </button>
+        </div>
         <div class="todos">
             <h4>todos which has done:</h4>
             <ul>
@@ -22,7 +34,7 @@
 </template>
 
 <script type="text/ecmascript-6">
-import { mapState,mapGetters } from 'vuex';
+import { mapState,mapGetters,mapActions } from 'vuex';
 export default {
     data() {
         return {
@@ -30,15 +42,25 @@ export default {
             localCount: 0
         }
     },
+    methods: {
+            ...mapActions({
+                updateName: 'updateName'
+            }),
+            ...mapActions('counter',{
+                add: 'increment',
+                addAsync: 'incrementAsync'
+            })
+    },
     computed: {
         // 使用对象展开运算符将此对象混入到外部对象中
         ...mapState({
-            count: state => state.count,
+            name: state => state.name,
+            count: state => state.counter.count,
             doneTodos: state => {
-                return state.todos.filter(todo => todo.done);
+                return state.counter.todos.filter(todo => todo.done);
             }
         }),
-        ...mapGetters({
+        ...mapGetters('counter',{
             notDones: 'notDoneTodos'
         })
     }

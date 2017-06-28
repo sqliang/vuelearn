@@ -47,6 +47,10 @@ export default [
                 path: 'about',
                 component: About,
                 meta: {auth:false}
+            },
+            {
+                path: 'tags',
+                component: Tags,
             }
         ]
     },

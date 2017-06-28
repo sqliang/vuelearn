@@ -10,9 +10,6 @@ import store from './store/index';
 
 import App from './App.vue';
 
-store.commit('increment');
-console.log(store.state.count); // 1
-
 new Vue({
     el: '#app',
     router,

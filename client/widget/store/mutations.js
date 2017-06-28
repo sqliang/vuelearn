@@ -1,5 +1,6 @@
 export default {
-    increment(state) {
-        state.count++;
+    updateName(state) {
+        let temp = Math.random()*10;
+         state.name = state.name + temp;
     }
 };

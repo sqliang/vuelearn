@@ -6,12 +6,16 @@ import state from './states';
 import getters from './getters';
 import actions from './actions';
 import mutations from './mutations';
+import moduleCounter from './modules/couter';
 
 const store = new Vuex.Store({
     state,
     getters,
     mutations,
-    actions
+    actions,
+    modules: {
+        counter: moduleCounter
+    }
 });
 
 export default store;
