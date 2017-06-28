@@ -23,7 +23,8 @@ export default {
                 title: 'heiheihahaha',
                 done: false
             }
-        ]
+        ],
+        message: 'nihao'
     },
     getters: {
         doneTodos(state, getters, rootState, rootGetters) {
@@ -36,6 +37,9 @@ export default {
     mutations: {
         increment(state) {
             state.count++;
+        },
+        updateMessage(state, message) {
+            state.message = message;
         }
     },
     actions: {

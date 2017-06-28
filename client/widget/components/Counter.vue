@@ -30,6 +30,10 @@
                 </li>
             </ul>
         </div>
+        <div class="message">
+            <input type="text" v-model="message">
+            <p>{{ message }}</p>
+        </div>
     </div>
 </template>
 
@@ -52,6 +56,14 @@ export default {
             })
     },
     computed: {
+        message: {
+            get() {
+               return this.$store.state.counter.message;
+            },
+            set(value) {
+                this.$store.commit('counter/updateMessage', value);
+            }
+        },
         // 使用对象展开运算符将此对象混入到外部对象中
         ...mapState({
             name: state => state.name,
