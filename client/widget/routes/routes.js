@@ -17,7 +17,6 @@ import Tags from '../components/container/Tags.vue';
 import Article from '../components/container/Article.vue';
 import NotFound from '../components/container/NotFound.vue';
 
-import Hello from '../components/Hello.vue';
 import Counter from '../components/Counter.vue';
 
 
@@ -56,7 +55,7 @@ export default [
             {
                 path: 'article/:id',
                 component: Article,
-                meta: {auth: false,scrollTop: true}
+                meta: {auth: false, scrollTop: true}
             }
         ]
     },
@@ -65,18 +64,14 @@ export default [
         component: Login,
         hidden: true
     },
-    {
-        path: '/hello',
-        component: Hello,
-        meta: {auth: false},
-        hidden: true
-    },
+    /// ====================基础学习部分路由
     {
         path: '/counter',
         component: Counter,
         meta: {auth: false},
         hidden: true
     },
+    /// ====================end
     {
         path: '*',
         component: NotFound,

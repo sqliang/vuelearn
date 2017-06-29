@@ -4,9 +4,10 @@
             <h2>sqliang</h2>
             <p>一个尝试组装vue和yog2,继续改装yog2的newer</p>
             <p>
-                <a href="">GitHub</a>
-                <a href="">掘金</a>
-                <a href="">简书</a>
+                <a href="https://github.com/sqliang" target="_blank">GitHub</a>
+                <a href="https://juejin.im/timeline" target="_blank">掘金</a>
+                <a href="http://www.jianshu.com/" target="_blank">简书</a>
+                <a href="https://shimo.im/" target="_blank">石墨</a>
             </p>
             <h2>关于</h2>
             <p>原作者的项目服务端采用 express + mongoDB 搭建, 客户端采用Vue2全家桶.本网站客户端采用vue2全家桶,服务器端采用yog2和接口网站,没有数据库</p>
