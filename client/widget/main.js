@@ -15,18 +15,6 @@ new Vue({
     router,
     store,
     template: '<App/>',
-    components: {App},
-    created: function () {
-        console.log('created');
-    },
-    mounted: function(){
-        console.log('mounted');
-    },
-    updated: function () {
-        console.log('updated');
-    },
-    destroyed: function () {
-        console.log('destroyed');
-    }
+    components: {App}
 });
 

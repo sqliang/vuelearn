@@ -51,6 +51,12 @@ export default [
             {
                 path: 'tags',
                 component: Tags,
+                meta: {auth: false}
+            },
+            {
+                path: 'article/:id',
+                component: Article,
+                meta: {auth: false,scrollTop: true}
             }
         ]
     },

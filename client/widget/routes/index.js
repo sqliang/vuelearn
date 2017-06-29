@@ -24,7 +24,7 @@ const router = new Router({
     routes
 });
 
-/*router.beforeEach(({meta, path}, from, next) => {
+router.beforeEach(({meta, path}, from, next) => {
     store.dispatch('showProgress',0);
     let {auth=true}=meta;
     let isLogin = Boolean(store.state.token);
@@ -36,6 +36,6 @@ const router = new Router({
         return next({path: '/admin'});
     }
     next();
-});*/
+});
 
 export default router;
