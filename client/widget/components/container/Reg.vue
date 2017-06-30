@@ -47,7 +47,7 @@
                 }
             };
         },
-        method: {
+        methods: {
             handleSubmit() {
                 this.$ref.user.validate((valid) => {
                     if(valid) {

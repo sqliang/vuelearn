@@ -29,7 +29,7 @@ export default {
             .then(({data}) => {
                 if (data.code === 200) {
                     commit(types.USER_SIGNIN, data.token);
-                    router.replace({path: '/admin.articleList'});
+                    router.replace({path: '/admin/articleList'});
                 }
                 else {
                     MsgAlert(data.message);

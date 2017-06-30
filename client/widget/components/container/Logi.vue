@@ -1,14 +1,28 @@
 <template>
     <div class="container">
-        <el-form ref="user" class="login_form" :model="user" :rules="rules2" label-position="left" label-width="0px" v-loading="loadingflag" element-loading-text="页面跳转中">
+        <el-form ref="user"
+                 class="login_form"
+                 :model="user"
+                 :rules="rules2"
+                 label-position="left"
+                 label-width="0px"
+                 v-loading="loadingflag"
+                 element-loading-text="页面跳转中">
             <h3 class="title">
                 欢迎登录后台管理系统
             </h3>
             <el-form-item prop="account">
-                <el-input type="text" v-model="user.account" auto-complete="off" placeholder="帐号" @change="changeFlag"></el-input>
+                <el-input type="text"
+                          v-model="user.account"
+                          auto-complete="off"
+                          placeholder="帐号"
+                          @change="changeFlag"></el-input>
             </el-form-item>
             <el-form-item prop="checkPass">
-                <el-input type="password" v-model="user.checkPass" auto-complete="off" placeholder="密码"></el-input>
+                <el-input type="password"
+                          v-model="user.checkPass"
+                          auto-complete="off"
+                          placeholder="密码"></el-input>
             </el-form-item>
             <el-form-item style="width: 100%">
                 <el-button class="login_button" type="primary" style="width: 40%;" @click="handleSubmit">登录</el-button>
@@ -20,7 +34,6 @@
 <script type="text/ecmascript-6">
     export default {
         data() {
-
             return {
                 logining: false,
                 user: {
@@ -35,7 +48,7 @@
                 loadingflag: false
             };
         },
-        method: {
+        methods: {
             handleSubmit() {
                 this.$refs.user.validate((valid) => {
                     if(valid) {

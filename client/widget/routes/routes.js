@@ -64,6 +64,41 @@ export default [
         component: Login,
         hidden: true
     },
+    {
+        path: '/admin',
+        component: Admin,
+        name: '管理面板',
+        iconCls: 'el-icon-message',
+        children: [
+            {
+                path: '',
+                hidden: true,
+                redirect: {name: '文章管理'}
+            },
+            {
+                path: 'articleList',
+                component: ArticleList,
+                name: '文章管理'
+            },
+            {
+                path: 'articleCreate',
+                component: ArticleCreate,
+                name: '创建文章',
+                hidden: true
+            },
+            {
+                path: 'articleEdit/:postId',
+                component: ArticleEdit,
+                name: '编辑文章',
+                hidden: true
+            },
+            {
+                path: 'classList',
+                component: ClassList,
+                name: '分类管理'
+            }
+        ]
+    },
     /// ====================基础学习部分路由
     {
         path: '/counter',
