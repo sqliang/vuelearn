@@ -26,9 +26,9 @@
             }
         },
         mounted() {
-            //this.$store.dispatch('changeHeadLine','关于');
+            this.$store.dispatch('changeHeadLine','关于');
             setTimeout(()=>{
-                //this.$store.dispatch('showProgress', 100)
+                this.$store.dispatch('showProgress', 100);
                 this.shows = true;
                 this.loading2 = false
             },300)

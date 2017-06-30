@@ -91,7 +91,7 @@ export default {
     },
 
     // 编辑分类
-    editClassfy(params){
+    editClassify(params){
         return instance.post('/vuelearn/api/classify/edit',params);
     }
 }

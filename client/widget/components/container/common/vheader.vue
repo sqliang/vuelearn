@@ -17,7 +17,7 @@
     </header>
 </template>
 
-<script>
+<script type="text/ecmascript-6">
     import { mapState } from 'vuex';
     export default {
         data(){
@@ -94,11 +94,13 @@
         margin:auto;
         font-size: 4rem;
         font-weight: 400;
+        color: #fff;
     }
 
     @media screen and (max-width:768px){
         .home_title h1{
             font-size: 2.6rem;
+            color: #fff;
         }
         .bg,header{
             height: 24rem;
