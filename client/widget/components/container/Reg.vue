@@ -1,6 +1,11 @@
 <template lang="html">
     <div class="container">
-        <el-form class="reg_form" ref="user" :model="user" :rules="rules2" label-position="left" label-width="0px">
+        <el-form class="reg_form"
+                 ref="user"
+                 :model="user"
+                 :rules="rules2"
+                 label-position="left"
+                 label-width="0px">
             <h3 class="title">系统注册</h3>
             <el-form-item prop="account">
                 <el-input type="text" v-model="user.account" auto-complete="off" placeholder="帐号"></el-input>
@@ -23,7 +28,7 @@
     export default {
         data(){
             //自定义验证函数
-            var checkRepeatPass = function (rule, value, callback) {
+            var checkRepeatPass =  (rule, value, callback) => {
                 if(value == ''){
                     return callback(new Error('请再次输入密码'));
                 }else if(value !== this.user.checkPass) {
@@ -49,7 +54,7 @@
         },
         methods: {
             handleSubmit() {
-                this.$ref.user.validate((valid) => {
+                this.$refs.user.validate((valid) => {
                     if(valid) {
                         this.$store.dispatch("UserReg", this.user);
                     } else {
@@ -66,7 +71,7 @@
 </script>
 
 <style lang="scss" scoped>
-    .el-form-item{
+    .el-form-item {
         text-align: center
     }
 </style>
