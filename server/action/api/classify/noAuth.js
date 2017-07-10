@@ -1,6 +1,4 @@
-/**
- * Created by baidu on 17/6/29.
- */
+
 module.exports.get = function (req, res, next) {
     let lists = [
         {

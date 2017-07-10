@@ -1,6 +1,3 @@
-/**
- * Created by baidu on 17/6/30.
- */
 let jwt = require('jsonwebtoken');
 
 module.exports = function (name) {

@@ -1,6 +1,4 @@
-/**
- * Created by baidu on 17/6/29.
- */
+
 module.exports.post = function (req, res, next) {
     let oneArticle = {
         '_id': '5937b8173fa8952a4778a338',

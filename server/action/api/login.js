@@ -1,6 +1,4 @@
-/**
- * Created by baidu on 17/6/12.
- */
+
 let sha1 = require('sha1');
 let createToken = require('./createToken');
 
