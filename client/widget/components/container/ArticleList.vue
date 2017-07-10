@@ -35,9 +35,9 @@
 </template>
 
 <script type="text/ecmascript-6">
-    import axios from 'axios'
-    import api from '../../api'
-    import NProgress from 'nprogress'
+    import axios from 'axios';
+    import api from '../../api';
+    import NProgress from 'nprogress';
     export default {
         data(){
             return {
@@ -93,7 +93,7 @@
                 this.$confirm('确认要删除吗?','提醒',{
                     confirmButtonText: '确定',
                     cancelButtonText: '取消',
-                    type:'waring'
+                    type:'warning'
                 })
                         .then(()=>{
                             this.listLoading = true;
