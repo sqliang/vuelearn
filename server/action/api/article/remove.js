@@ -1,3 +1,9 @@
-/**
- * Created by baidu on 17/6/29.
- */
+
+module.exports.post = function (req, res, next) {
+    let { id } = req.body;
+
+    res.json({
+        code: 200,
+        message: '删除成功'
+    });
+}

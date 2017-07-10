@@ -26,7 +26,7 @@
                     </el-col>
                     <!--展示区-->
                     <el-col :span="12">
-                        <div style="background:#fff;margin:0 0 0 20px;height:526px;overflow-y:auto;" v-html="markedToHtml"></div>
+                        <div style="background:#fff;margin:0 0 0 20px;height:526px;overflow-y:auto;" v-html="markedToHtml" class="article"></div>
                     </el-col>
                 </el-row>
 

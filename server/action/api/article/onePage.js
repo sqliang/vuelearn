@@ -1,3 +1,16 @@
-/**
- * Created by baidu on 17/6/29.
- */
+
+module.exports.post = function (req, res, next) {
+    let { id } = req.body;
+    let oneArticle = {
+        '_id': '5937b8173fa8952a4778a338',
+        'contentToMark': '<p>决策树呀决策树1。。。</p>\n',
+        'classify': '机器学习',
+        'title': '决策树',
+        'content': '决策树呀决策树。。。'
+    };
+
+    res.json({
+        code: 200,
+        oneArticle
+    });
+}
