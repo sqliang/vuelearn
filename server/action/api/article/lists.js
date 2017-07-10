@@ -1,5 +1,5 @@
 /**
- * Created by baidu on 17/6/29.
+ *
  */
 module.exports.post = function (req, res, next) {
     let { page, limit } = req.body;
@@ -31,5 +31,5 @@ module.exports.post = function (req, res, next) {
         code: 200,
         articleLists,
         total
-    })
+    });
 }
