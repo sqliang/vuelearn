@@ -108,6 +108,12 @@ export default [
     },
     /// ====================end
     {
+        path: '/error',
+        component: NotFound,
+        meta: {auth: false},
+        hidden: true
+    },
+    {
         path: '*',
         component: NotFound,
         hidden: true

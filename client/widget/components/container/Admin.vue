@@ -2,12 +2,14 @@
     <el-row class="panel">
         <el-row class="top">
             <el-col :span="23" class="panel-top" :push="1">
+                <!-- push就是相对定位了 -->
+                <!-- offset设置的是margin-left-->
                 <el-col :span="20" style="font-size: 26px;">
                     <span>AD<i style="color: #20a0ff;">MIN</i></span>
                 </el-col>
                 <el-col class="rightbar" :span="4">
                     <el-dropdown trigger="click">
-                        <span class="el-dropdown-link" style="color:#c0ccda;cursor: pointer;font-weight:700">
+                        <span class="el-dropdown-link" style="color:#c0ccda;cursor: pointer;font-weight: 700">
                             更多操作<i class="el-icon-caret-bottom el-icon--right"></i>
                         </span>
                         <el-dropdown-menu slot="dropdown">
@@ -22,7 +24,7 @@
         <el-row class="panel-center">
             <!--left nav-->
             <el-col :span="5">
-                <el-menu theme="dark" router: default-active="currentPath">
+                <el-menu theme="dark" router :default-active="currentPath">
                     <template v-for="(item,index) in $router.options.routes" v-if="!item.hidden">
                         <el-submenu :index="index+''">
                             <template slot="title"><i :class="item.iconCls"></i>{{item.name}}</template>
@@ -49,7 +51,6 @@
 </template>
 
 <script type="text/ecmascript-6">
-    import {mapState} from 'vuex';
     export default {
         data() {
             return {
