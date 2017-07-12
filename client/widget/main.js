@@ -1,7 +1,6 @@
 import Vue from 'vue/dist/vue';
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-default/index.css';
-import 'highlight.js/styles/atom-one-dark.css';
 import '../static/css/commen.css';// 可以覆盖index.css的样式
 
 

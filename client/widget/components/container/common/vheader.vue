@@ -9,7 +9,7 @@
             </ul>
         </nav>
         <!--end nav 1-->
-        <section class="home-title">
+        <section class="home_title">
             <transition name="fade">
                 <h1 v-if="show_headline">{{ finalheadline }}</h1>
             </transition>
