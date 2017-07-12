@@ -2,8 +2,7 @@
     <el-row class="panel">
         <el-row class="top">
             <el-col :span="23" class="panel-top" :push="1">
-                <!-- push就是相对定位了 -->
-                <!-- offset设置的是margin-left-->
+
                 <el-col :span="20" style="font-size: 26px;">
                     <span>AD<i style="color: #20a0ff;">MIN</i></span>
                 </el-col>
