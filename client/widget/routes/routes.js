@@ -18,6 +18,7 @@ import Article from '../components/container/Article.vue';
 import NotFound from '../components/container/NotFound.vue';
 
 import Counter from '../components/Counter.vue';
+import Hello from '../components/Hello.vue';
 
 
 export default [
@@ -103,6 +104,12 @@ export default [
     {
         path: '/counter',
         component: Counter,
+        meta: {auth: false},
+        hidden: true
+    },
+    {
+        path: '/hello',
+        component: Hello,
         meta: {auth: false},
         hidden: true
     },
